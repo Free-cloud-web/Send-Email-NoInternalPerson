@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Send Email</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G6BG8KV70C"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-G6BG8KV70C');
+</script>
+
+<script>
+
+const subjects = [
+"Urgent Humanitarian Request: Restore Internet Access for Iran",
+"Immediate Action Needed: Satellite Connectivity for Iranian Civilians",
+"Critical Appeal: Enable Communication in Iran",
+"Support the Iranian People: Internet Access at Risk",
+"Humanitarian Emergency: Iran Connectivity Needed",
+"Urgent Call to Restore Communications in Iran",
+"Satellite Access Request for Iranian Civilian Safety",
+"Prevent Human Rights Silence in Iran: Restore Internet",
+"Global Appeal: Enable Digital Lifeline for Iran",
+"Life-Saving Communication Needed in Iran",
+"Immediate Connectivity Support Required in Iran",
+"Restore Satellite Internet for Iranian Civilians",
+"Humanitarian Lifeline: Communication for Iran",
+"Urgent Support Needed for Iranian Freedom of Expression",
+"Critical Humanitarian Action: Connect Iran"
+];
+
+const bodies = [
+`To the United States Government, Department of Defense, SpaceX, Starlink, and Global Humanitarian Organizations,
+
+We are reaching out to report a dire humanitarian emergency currently unfolding in Iran. As the nation approaches a historic and critical juncture, a near-total internet shutdown has been enforced, silencing millions and concealing the reality from the world.
+
+This is no longer merely a disruption in communications; it has become a tool of state-sanctioned violence. Officials have explicitly warned that anyone who participates in public demonstrations or is perceived to have international support faces immediate lethal consequences. This threat is being leveraged to paralyze civilians while they are isolated from the global community.
+
+In this moment of crisis, communication is a lifeline. We urgently appeal to Elon Musk, whose consistent support for the Iranian people’s right to free expression has inspired hope, to take immediate action.
+
+While we deeply appreciate prior leadership, the urgency now is unparalleled. We respectfully urge SpaceX, Starlink, and the United States Government to deploy all available measures—both technological and operational—to restore satellite connectivity within Iran.
+
+This is not just a technical matter; it is an essential protection for documenting human rights violations, verifying the safety of families, and preserving the voices of ordinary citizens.
+
+The world cannot stand idly by while digital isolation enables violence. We call upon you to implement all humanitarian avenues to reconnect the Iranian people. Your immediate action could save countless lives.
+
+Thank you for your urgent attention.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and International Humanitarian Organizations,
+
+We are writing to bring urgent attention to a humanitarian crisis unfolding in Iran. The country has entered a decisive historic moment, during which authorities have imposed a near-total internet blackout, silencing millions and hiding the reality on the ground.
+
+This is no longer a simple communication interruption; it has become a tool of direct state-sanctioned violence. Officials have warned that anyone seen protesting or aligned with international support could face immediate lethal action. Civilians are left isolated and paralyzed.
+
+Communication is the only lifeline at this perilous time. We urgently call on Elon Musk, whose unwavering support for freedom of expression in Iran has inspired hope, to take swift action.
+
+While we appreciate past leadership, the urgency now is unprecedented. We respectfully urge SpaceX, Starlink, and the U.S. Government to implement all technological and operational means to restore satellite connectivity in Iran.
+
+This is not merely technical; it is a critical safeguard to document human rights violations, ensure family safety, and preserve the voices of ordinary citizens.
+
+The world cannot stand silently by while digital isolation enables violence. All humanitarian measures must be taken to reconnect the Iranian people. Prompt action could save thousands of lives.
+
+Thank you for your attention.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and Global Humanitarian Organizations,
+
+We write to alert you to an escalating humanitarian crisis in Iran. As the country reaches a pivotal and historic point, a near-total internet shutdown has been enforced, effectively silencing millions of citizens and hiding events from the world.
+
+This is far beyond a simple communication disruption; it is a mechanism of state-sanctioned violence. Authorities have stated that individuals taking part in protests or believed to be supported internationally face immediate lethal consequences. Civilians are paralyzed and disconnected from the global community.
+
+Communication is the lifeline that remains. We urgently appeal to Elon Musk, whose consistent advocacy for Iranian free expression has been a beacon of hope, to intervene immediately.
+
+We acknowledge previous leadership with gratitude, but the urgency now cannot be overstated. We respectfully request SpaceX, Starlink, and the U.S. Government deploy all available technological and operational measures to restore satellite connectivity.
+
+This is not merely a technological service; it is a vital safeguard to document human rights violations, verify family safety, and preserve ordinary citizens' voices.
+
+The international community cannot remain silent while digital isolation enables violence. Every humanitarian measure should be taken to reconnect Iran. Immediate action could save thousands.
+
+Thank you for your urgent consideration.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and International Humanitarian Organizations,
+
+We are writing to bring to your attention a critical humanitarian emergency in Iran. As the nation faces a historic and decisive moment, a near-total internet shutdown has been imposed, silencing millions and concealing the truth from the world.
+
+This crisis has gone beyond a mere communication blackout; it represents state-sanctioned violence. Authorities have warned that anyone who protests or is seen as connected with international support faces immediate lethal action. Civilians are effectively paralyzed and isolated.
+
+In this dangerous hour, communication is the only lifeline. We urgently call on Elon Musk, whose continuous support for the Iranian people’s right to free speech has inspired hope, to take action.
+
+We appreciate past leadership but emphasize that the urgency now is greater than ever. We respectfully urge SpaceX, Starlink, and the U.S. Government to apply all technological and logistical means to restore satellite connectivity.
+
+This is not only a technological issue; it is a critical safeguard to document human rights violations, allow families to confirm loved ones’ safety, and preserve ordinary citizens’ voices.
+
+The world cannot remain silent while digital isolation facilitates violence. Immediate humanitarian measures must reconnect the Iranian people. Swift action could save countless lives.
+
+Thank you for your urgent attention.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and Global Humanitarian Organizations,
+
+We write to report a rapidly worsening humanitarian crisis in Iran. A near-total internet blackout has been enforced at a historic and decisive moment, silencing millions of civilians and hiding the truth from the global community.
+
+This disruption is not only a communication failure; it is being used as a tool of state-sanctioned violence. Officials have warned that anyone seen taking part in protests or aligned with international supporters faces immediate lethal consequences, leaving the population paralyzed and isolated.
+
+Communication is now a lifeline. We urgently appeal to Elon Musk, whose prior support for the Iranian people’s right to free expression has been critical, to act immediately.
+
+While we recognize past leadership efforts, the current urgency requires decisive action. We respectfully request that SpaceX, Starlink, and the U.S. Government take all feasible technological and operational measures to restore satellite connectivity in Iran.
+
+This is more than technology; it is a vital mechanism to document human rights abuses, verify the safety of families, and preserve the voices of ordinary citizens.
+
+The world cannot remain silent as digital isolation facilitates violence. Immediate humanitarian steps could save thousands of lives.
+
+Thank you for your swift attention.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and International Humanitarian Organizations,
+
+We write to bring to your attention an urgent humanitarian situation in Iran. As the country reaches a critical historic juncture, authorities have imposed a near-total internet blackout, silencing millions of voices and concealing the reality on the ground.
+
+This goes far beyond a communications disruption; it has become a method of state-sanctioned violence. Individuals taking to the streets or perceived as supported internationally face immediate lethal threats. Civilians are paralyzed and isolated from the global community.
+
+At this critical time, communication is a lifeline. We urgently call on Elon Musk, whose steadfast support for the Iranian people’s right to free speech has inspired hope, to act immediately.
+
+While we are grateful for prior leadership, the urgency now is exceptional. We respectfully urge SpaceX, Starlink, and the U.S. Government to employ all technological and operational measures to restore satellite connectivity in Iran.
+
+This is not merely a technical matter; it is a crucial safeguard to document human rights violations, confirm family safety, and preserve ordinary citizens’ voices.
+
+The world cannot remain silent while digital isolation enables violence. Immediate humanitarian intervention is required to reconnect the Iranian people. Your prompt action could save thousands of lives.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and Global Humanitarian Organizations,
+
+We are reaching out to alert you to a critical humanitarian emergency in Iran. A near-total internet shutdown has been enforced during a historic and decisive moment, silencing millions and concealing events from the international community.
+
+This is not just a communications problem; it is being used as a tool of state-sanctioned violence. Authorities have explicitly warned that anyone taking part in protests or associated with international support faces immediate lethal action. Civilians are paralyzed and isolated from the global community.
+
+Communication is a lifeline at this dangerous time. We urgently appeal to Elon Musk, whose past support for Iranian free expression has provided hope, to act immediately.
+
+While previous leadership is appreciated, the current crisis demands immediate action. We respectfully request that SpaceX, Starlink, and the U.S. Government take all available measures—technological and operational—to restore satellite connectivity in Iran.
+
+This is more than technology; it is a critical safeguard to document human rights abuses, verify families’ safety, and preserve ordinary citizens’ voices.
+
+The international community cannot remain silent while digital isolation facilitates violence. Prompt humanitarian measures could save countless lives.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and International Humanitarian Organizations,
+
+We are writing to inform you of an urgent humanitarian crisis in Iran. As the nation reaches a pivotal and historic point, a near-total internet shutdown has been enforced, silencing millions and concealing the truth from the world.
+
+This situation extends beyond a simple communication blackout; it is an instrument of state-sanctioned violence. Authorities have stated that anyone participating in protests or perceived as aligned with international supporters faces immediate lethal consequences. Civilians remain paralyzed and isolated.
+
+Communication is the only lifeline. We urgently call on Elon Musk, whose consistent advocacy for Iranian free speech has inspired hope, to take immediate action.
+
+While we acknowledge prior leadership, the urgency now is unprecedented. We respectfully urge SpaceX, Starlink, and the U.S. Government to deploy all technological and operational measures to restore connectivity.
+
+This is not merely technical; it is a vital safeguard to document human rights abuses, verify family safety, and preserve ordinary citizens’ voices.
+
+The world cannot remain silent as digital isolation enables violence. Immediate humanitarian measures are essential. Your rapid action could save thousands.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and Global Humanitarian Organizations,
+
+We are writing to report a rapidly escalating humanitarian crisis in Iran. Authorities have imposed a near-total internet blackout during a historic and critical moment, silencing millions and concealing the reality from the international community.
+
+This goes far beyond a simple communications disruption; it has become a mechanism of state-sanctioned violence. Officials have warned that anyone protesting or perceived as aligned with international support faces immediate lethal threats. Civilians are paralyzed and isolated.
+
+Communication is a lifeline. We urgently appeal to Elon Musk, whose previous support for the Iranian people’s right to free expression has inspired hope, to take immediate action.
+
+While we recognize past leadership, the urgency now demands decisive measures. We respectfully request that SpaceX, Starlink, and the U.S. Government implement all possible technological and operational strategies to restore satellite connectivity.
+
+This is not just technical; it is a necessary safeguard to document human rights violations, confirm family safety, and preserve ordinary citizens’ voices.
+
+The world cannot remain silent while digital isolation facilitates violence. Every humanitarian intervention counts and could save thousands of lives.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and International Humanitarian Organizations,
+
+We write to draw your urgent attention to a humanitarian emergency in Iran. As the nation reaches a historic and decisive point, authorities have imposed a near-total internet shutdown, silencing millions and obscuring the reality on the ground.
+
+This crisis surpasses a simple communications blackout; it has become a method of state-sanctioned violence. Anyone participating in protests or perceived as internationally supported faces immediate lethal threats. Civilians remain isolated and paralyzed.
+
+Communication is the lifeline that remains. We urgently call upon Elon Musk, whose unwavering support for Iranian free speech has provided hope, to intervene immediately.
+
+While we appreciate prior leadership, the urgency now is exceptional. We respectfully urge SpaceX, Starlink, and the U.S. Government to take all technological and operational measures to restore satellite connectivity in Iran.
+
+This is not merely a technical issue; it is a critical safeguard to document human rights abuses, verify family safety, and preserve the voices of ordinary citizens.
+
+The world cannot remain silent as digital isolation facilitates violence. Immediate humanitarian measures could save thousands.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and Global Humanitarian Organizations,
+
+We are alerting you to a severe humanitarian crisis in Iran. Authorities have implemented a near-total internet blackout at a historic and pivotal moment, silencing millions and masking events from the global community.
+
+This disruption extends beyond a communications issue; it has become a tool of state-sanctioned violence. Officials have warned that individuals participating in protests or associated with international support face immediate lethal consequences. Civilians are paralyzed and isolated.
+
+Communication is the only lifeline at this critical juncture. We urgently appeal to Elon Musk, whose previous advocacy for Iranian free expression has inspired hope, to take swift action.
+
+While prior leadership is appreciated, the current situation demands urgent measures. We respectfully request that SpaceX, Starlink, and the U.S. Government apply all technological and operational methods to restore satellite connectivity.
+
+This is not merely technical; it is a vital safeguard to document human rights violations, ensure family safety, and preserve ordinary citizens’ voices.
+
+The world cannot remain silent while digital isolation facilitates violence. Immediate humanitarian steps could save countless lives.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and International Humanitarian Organizations,
+
+We are writing to report a critical humanitarian emergency unfolding in Iran. Authorities have imposed a near-total internet shutdown at a historic and decisive moment, silencing millions and hiding the truth from the world.
+
+This is beyond a simple communications disruption; it has become a method of state-sanctioned violence. Individuals taking part in protests or perceived as internationally supported face immediate lethal threats. Civilians are paralyzed and isolated.
+
+Communication is a lifeline. We urgently call on Elon Musk, whose consistent support for Iranian free expression has provided hope, to take immediate action.
+
+While we acknowledge past leadership, the urgency now is unmatched. We respectfully urge SpaceX, Starlink, and the U.S. Government to employ all technological and operational strategies to restore connectivity.
+
+This is not merely a technical matter; it is a crucial safeguard to document human rights abuses, confirm family safety, and preserve the voices of ordinary citizens.
+
+The world cannot remain silent while digital isolation enables violence. Immediate humanitarian intervention is required to save lives.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and Global Humanitarian Organizations,
+
+We write to alert you to an urgent humanitarian crisis in Iran. Authorities have enacted a near-total internet blackout during a historic and decisive period, silencing millions and masking events from the global community.
+
+This disruption is more than a communication failure; it has become a mechanism of state-sanctioned violence. Officials have warned that anyone protesting or perceived as supported internationally faces immediate lethal consequences. Civilians remain paralyzed and isolated.
+
+Communication is the only lifeline at this critical time. We urgently call on Elon Musk, whose past advocacy for Iranian free expression has inspired hope, to act immediately.
+
+While we respect prior leadership, the current situation requires urgent action. We respectfully request SpaceX, Starlink, and the U.S. Government to deploy all available technological and operational measures to restore satellite connectivity in Iran.
+
+This is not merely technical; it is a vital safeguard to document human rights violations, ensure family safety, and preserve ordinary citizens’ voices.
+
+The world cannot remain silent while digital isolation facilitates violence. Swift humanitarian measures could save thousands.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and International Humanitarian Organizations,
+
+We are writing to bring urgent attention to a humanitarian emergency in Iran. At a historic and decisive moment, authorities have implemented a near-total internet blackout, silencing millions and hiding the ground reality.
+
+This is far more than a communications disruption; it is being used as a tool of state-sanctioned violence. Those participating in protests or aligned with international support face immediate lethal threats. Civilians are paralyzed and isolated.
+
+Communication is a lifeline. We urgently appeal to Elon Musk, whose consistent support for the Iranian people’s right to free expression has provided hope, to act immediately.
+
+While we acknowledge prior leadership, the urgency now is unparalleled. We respectfully urge SpaceX, Starlink, and the U.S. Government to employ all technological and operational means to restore connectivity.
+
+This is not only technical; it is a safeguard to document human rights abuses, verify family safety, and preserve ordinary citizens’ voices.
+
+The world cannot remain silent as digital isolation facilitates violence. Immediate humanitarian measures could save thousands of lives.
+
+Respectfully,
+Concerned Members of the Iranian Community`,
+
+`To the United States Government, Department of Defense, SpaceX, Starlink, and Global Humanitarian Organizations,
+
+We write to report a rapidly escalating humanitarian crisis in Iran. Authorities have imposed a near-total internet blackout at a historic and decisive moment, silencing millions and concealing events from the international community.
+
+This situation is more than a communications disruption; it is a tool of state-sanctioned violence. Individuals participating in protests or perceived as internationally supported face immediate lethal consequences. Civilians are paralyzed and isolated.
+
+Communication is the lifeline. We urgently appeal to Elon Musk, whose past support for Iranian free expression has inspired hope, to take immediate action.
+
+While previous leadership is appreciated, the urgency now requires decisive measures. We respectfully request SpaceX, Starlink, and the U.S. Government implement all technological and operational strategies to restore satellite connectivity.
+
+This is not merely technical; it is a crucial safeguard to document human rights violations, ensure family safety, and preserve ordinary citizens’ voices.
+
+The world cannot remain silent while digital isolation facilitates violence. Immediate humanitarian intervention could save thousands.
+
+Respectfully,
+Concerned Members of the Iranian Community`
+];
+
+function sendEmail(){
+
+const subject = subjects[Math.floor(Math.random() * subjects.length)];
+const body = bodies[Math.floor(Math.random() * bodies.length)];
+
+gtag('event','mailto_open',{
+event_category:'Email Campaign',
+event_label:'GitHub Redirect'
+});
+
+const mailto =
+"mailto:richard_perry@lgraham.senate.gov"
++ "?bcc=pm@pm.gc.ca,pierre.poilievre@parl.gc.ca,don.davies@parl.gc.ca,Elizabeth.May@parl.gc.ca,Yves-Francois.Blanchet@parl.gc.ca,richard_perry@lgraham.senate.gov,audrie_floyd@risch.senate.gov,chad_kreikemeier@shaheen.senate.gov,dara_cohen@rosen.senate.gov,jon_lauck@thune.senate.gov,steve_mann@schumer.senate.gov,ahmed.hussen@parl.gc.ca,Faycal.El-Khoury@parl.gc.ca,anita.anand@parl.gc.ca,david.mcallister@europarl.europa.eu,mounir.satouri@europarl.europa.eu,manfred.weber@europarl.europa.eu,iratxe.garcia-perez@europarl.europa.eu,valerie.hayer@europarl.europa.eu,bas.eickhout@europarl.europa.eu,manon.aubry@europarl.europa.eu,tips@reuters.com,Newsroom@globeandmail.com,city@thestar.ca,letters@washpost.com,tips@cnn.com,kabc.news@abc.com,tips@latimes.com"
++ "&subject=" + encodeURIComponent(subject) 
++ "&body=" + encodeURIComponent(body);
+
+window.location.href = mailto;
+
+}
+
+window.onload = sendEmail;
+
+</script>
+
+</head>
+
+<body>
+<p>Sent! Thanks!</p>
+</body>
+</html>
